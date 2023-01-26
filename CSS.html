@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Canadian Student Society</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+    </style>
+     <link rel="shortcut icon" type="x-icon" href="thing.png">
+  </head>
+  <body>
+    <header>
+        <img src="thing.png" id="thing" type="x-icon" width="70" height="70">
+       <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">BC Youth Service</a></li>
+        <li><a href="#">Private Tutoring</a></li>
+        <li><a href="#">Meet The Team</a></li>
+        <li><a href="#">Join The Team</a></li>
+        <li><a href="#">Our Partnerships</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">More</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="stars.png" id="stars">
+      <img src="moon.png" id="moon">
+      <img src="mountains_behind.png" id="mountains_behind">
+      <h2 id="text">Canadian Student Society</h2>
+      <h3 id="text20"><br><br><br><br><br><br>International Student Tutoring & Connections Organization</h3>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="mountains_front.png" id="mountains_front">
+      <div class="content">
+    </section>
+    <div class="sec" id="sec">
+      <h2>​Educating and Serving, since 2014</h2>
+      <p>Our tutors support your child in every dream, and each course will lead them into a maze of possibilities.</p>
+    </div class="sec">
+    <script type="text/javascript">
+      let moon = document.getElementById('moon');
+      let stars = document.getElementById('stars');
+      let mountains_behind = document.getElementById('mountains_behind');
+      let mountains_front = document.getElementById('mountains_front');
+      let text = document.getElementById('text');
+      let btn = document.getElementById('btn');
+      let header = document.querySelector('header');
+      window.addEventListener('scroll', function() {
+        var value = window.scrollY;
+        moon.style.top = -value * -1.05 + 'px';
+        stars.style.left = value * 0.25 + 'px';
+        mountains_behind.style.top =-value * -0.5 + 'px';
+        header.style.top =-value * -0.5 + 'px';
+        mountains_front.style.top =-value * 0 + 'px';
+        text.style.marginTop = value * -1 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        text.style.marginRight = value * -0 + 'px';
+      });
+    </script>
+  </body>
+</html>
