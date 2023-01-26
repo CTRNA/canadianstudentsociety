@@ -1,20 +1,30 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
- 
-    <title>Canadian Student Society</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    
+<title>Canadian Student Society</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         body {
             font-family: 'Quicksand', sans-serif;
         }
     </style>
-     <link rel="shortcut icon" type="x-icon" href="/thing.png">
+     <link rel="shortcut icon" type="x-icon" href="thing.png">
   </head>
   <body>
     <header>
-        <img src="thing.png" id="thing" type="x-icon" width="70" height="70">
-       <ul>
+<div class="logo";
+      <img src="thing.png" id="thing" type="x-icon" width="70" height="70" alt="">
+    </div>
+     <nav>
+       <ul class="nav-links">
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">Register</a></li>
         <li><a href="#">BC Youth Service</a></li>
@@ -24,20 +34,26 @@
         <li><a href="#">Our Partnerships</a></li>
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">More</a></li>
+          </a></li>
       </ul>
+    </nav>
+       <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
     </header>
     <section>
-      <img src="stars.png" id="stars">
-      <img src="moon.png" id="moon">
-      <img src="mountains_behind.png" id="mountains_behind">
+      <img src="stars.png" id="stars" alt="">
+      <img src="moon.png" id="moon" alt="">
+      <img src="mountains_behind.png" id="mountains_behind" alt="">
       <h2 id="text">Canadian Student Society</h2>
       <h3 id="text20"><br><br><br><br><br><br>International Student Tutoring & Connections Organization</h3>
       <a href="#sec" id="btn">Explore</a>
-      <img src="mountains_front.png" id="mountains_front">
+      <img src="mountains_front.png" id="mountains_front" alt="">
       <div class="content">
     </section>
     <div class="sec" id="sec">
-      <h2>​Educating and Serving, since 2014</h2>
+      <h2></h2>Educating and Serving, since 2014</h2>
       <p>Our tutors support your child in every dream, and each course will lead them into a maze of possibilities.</p>
     </div class="sec">
     <script type="text/javascript">
@@ -60,5 +76,21 @@
         text.style.marginRight = value * -0 + 'px';
       });
     </script>
+
+
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+
+
   </body>
 </html>
