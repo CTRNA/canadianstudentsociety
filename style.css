@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Quicksand:wght@300&display=swap');
 *
 {
   margin: 0;
@@ -113,6 +113,16 @@ section img#stars
 {
   z-index: -5;
 }
+section img#background
+{
+  z-index: -8;
+  opacity: 0.9;
+}
+section img#background2
+{
+  z-index: -8;
+  opacity: 0.9;
+}
 h2#text
 {
   position: absolute;
@@ -122,20 +132,21 @@ h2#text
   transform: translateY(0px);
   z-index: 1;
  font-family: 'Quicksand', sans-serif;
+ 
 
 }
 #btn
 {
   text-decoration: none;
   padding: 5px 20px;
-  border-radius: 30px;
+  border-radius: 10px;
 fill-opacity: 0.5;
   background: rgb(0, 0, 0);
   color: #ffffff;
   transform: translateY(150px);
   font-size: 1.5em;
   z-index: 9;
-  font-family: 'Quicksand', sans-serif;
+  font: bold;
 }
 .sec
 {
@@ -242,4 +253,36 @@ nav{
         opacity: 1;
         transform: translateX(0px);
   }
+}
+@media screen and (min-width: 1024px) {
+  pp:before {
+    content: "Canadian Student Society";
+  }
+}
+
+@media screen and (max-width: 678px) {
+  pp:before {
+    content: "C S S";
+    font-size: 300%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  ilikemen:before {
+    content: "International Student Tutoring & Connections Organization";
+    font-size:100%;
+  }
+}
+@media screen and (max-width: 678px) {
+  ilikemen:before {
+    content: "";
+    font-size: 300%;
+  }
+}
+pp#textglow{
+  color: rgb(0, 0, 0);
+  text-shadow:0px 0px 30px rgb(151, 151, 151),30px 0px 10px #ffffff;
+}
+ilikemen#textglow{
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 100px rgb(117, 117, 117),0px 30px 30px rgb(120, 120, 120),0px 0px 30px rgb(103, 103, 103),30px 0px 10px #ffffff;
 }
