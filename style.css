@@ -99,11 +99,19 @@ section img
 section img#moon
 {
   mix-blend-mode: screen;
-  z-index: 100;
+  z-index: -3;
 }
 section img#mountains_front
 {
-  z-index: 10;
+  z-index: -2;
+}
+section img#mountains_behind
+{
+  z-index: -4;
+}
+section img#stars
+{
+  z-index: -5;
 }
 h2#text
 {
@@ -112,7 +120,7 @@ h2#text
   white-space: nowrap;
   font-size: 5vw;
   transform: translateY(0px);
-  z-index: 1000;
+  z-index: 1;
  font-family: 'Quicksand', sans-serif;
 
 }
@@ -157,7 +165,7 @@ h3#text20
   white-space: nowrap;
   font-size: 1vw;
   transform: translateY(0px);
-  z-index: 10000000;
+  z-index: 0;
  font-family: 'Quicksand', sans-serif;
 }
 input[type=checkbox]{
@@ -167,56 +175,71 @@ display: none;
 .burger{
   display: none;
   cursor: pointer;
+  transform:translateX(65px)
+   
   
 }
 .burger div{
   width: 20px;
   height: 2px;
-  background-color: #fff;
   margin: 5px;
   background-color: black;
 }
-
+@media screen and (max-width: 1024px){
+  .nav-links{
+   width: 60%;
+  }
+}
+  @media screen and (max-width: 678px){
+    body{
+      overflow-x: hidden;
+      
+    }
+    .nav-links{
+      position: absolute;
+      right:0px;
+      height: 92vh;
+      top: 9vh;
+      background-color:#ffffff;
+      z-index: 100000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+     
+    }
+    .nav-links li{
+      opacity: 0;
+    }
+    .burger{
+      display: block;
+    }
+  }
 nav{
   display: flex;
   justify-content:space-around;
   min-height: 8vh;
   justify-content: center;
+  
 }
 .nav-links{
   display: flex;
+  color: #0000; 
 }
 
-@media screen and (max-width: 1024px){
- .nav-links{
-  width: 60%;
- }
- 
-}
-@media screen and (max-width: 678px){
-  body{
-    overflow-x: hiddn;
-  }
-  .nav-links{
-    position: absolute;
-    right:0px;
-    height: 92vh;
-    top: 8vh;
-    background-color:#ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-  .nav-links li{
-    opacity: 0;
-  }
-  .burger{
-    display: block;
-  }
-}
 .nav-active{
   transform: translateX(0%);
+  
+}
+@keyframes navLinkFade{
+  from{
+        opacity: 0;
+        transform: translateX(50px);
+  }
+  to{
+        opacity: 1;
+        transform: translateX(0px);
+  }
 }
