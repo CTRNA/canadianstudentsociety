@@ -204,6 +204,7 @@ display: none;
   @media screen and (max-width: 678px){
     html, body{
       overflow-x: hidden;
+       position: fixed;
       
     }
     .nav-links{
