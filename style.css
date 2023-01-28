@@ -53,7 +53,7 @@ header ul
 header ul li
 {
   list-style: none;
-  margin-left: 10px;
+  margin-left: 1px;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -187,11 +187,15 @@ display: none;
   display: none;
   cursor: pointer;
   transform:translateX(65px)
+
    
   
 }
 .burger div{
+  position: relative;
+  z-index: 1001;
   width: 20px;
+  
   height: 2px;
   margin: 5px;
   background-color: black;
@@ -201,19 +205,17 @@ display: none;
    width: 60%;
   }
 }
-  @media screen and (max-width: 678px){
+@media screen and (max-width: 675px){
     html, body{
       overflow-x: hidden;
-       position: fixed;
       
     }
     .nav-links{
-      position: absolute;
+      position:absolute;
       right:0px;
       height: 92vh;
-      top: 9vh;
       background-color:#ffffff;
-      z-index: 100000;
+      z-index: 100;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -227,6 +229,7 @@ display: none;
     }
     .burger{
       display: block;
+      z-index: 1001;
     }
   }
 nav{
@@ -255,25 +258,25 @@ nav{
         transform: translateX(0px);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 675px) {
   pp:before {
     content: "Canadian Student Society";
   }
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 675px) {
   pp:before {
     content: "C S S";
     font-size: 300%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 675px) {
   ilikemen:before {
     content: "International Student Tutoring & Connections Organization";
     font-size:100%;
   }
 }
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 675px) {
   ilikemen:before {
     content: "";
     font-size: 300%;
@@ -281,9 +284,9 @@ nav{
 }
 pp#textglow{
   color: rgb(0, 0, 0);
-  text-shadow:0px 0px 30px rgb(151, 151, 151),30px 0px 10px #ffffff;
+  text-shdow:0px 0px 30px rgb(194, 194, 194),30px 0px 10px #ffffff;
 }
 ilikemen#textglow{
   color: rgb(0, 0, 0);
-  text-shadow: 0px 0px 100px rgb(117, 117, 117),0px 30px 30px rgb(120, 120, 120),0px 0px 30px rgb(103, 103, 103),30px 0px 10px #ffffff;
+  text-shadow: 0px 0px 100px rgb(184, 184, 184),0px 30px 30px rgb(120, 120, 120),0px 0px 30px rgb(103, 103, 103),30px 0px 10px #ffffff;
 }
