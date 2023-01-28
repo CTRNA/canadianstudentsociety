@@ -202,7 +202,7 @@ display: none;
   }
 }
   @media screen and (max-width: 678px){
-    body{
+    html, body{
       overflow-x: hidden;
       
     }
